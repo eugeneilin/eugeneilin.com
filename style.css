@@ -1,0 +1,105 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Styling */
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  height: 100%;
+}
+
+a {
+  color: #00023e;
+  text-decoration: none;
+}
+
+/* Utility Classes */
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  text-align: center;
+}
+
+.bg-primary {
+  background: rgb(241, 241, 241);
+  color: #00023e;
+}
+
+.bg-secondary {
+  background: white;
+  color: #00023e;
+}
+
+.l-heading {
+  font-size: 43px;
+}
+
+.clr {
+  clear: both;
+}
+
+/* Wrapper */
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+
+/* Header */
+#hero {
+  padding-bottom: 1em;
+}
+
+#hero .container img {
+  max-width: 15em;
+  border-radius: 50%;
+  margin: 2em 0;
+}
+
+#hero .container h1 {
+  margin-bottom: 0.3em;
+}
+
+#hero .container p {
+  padding: 0.2em 3em;
+  line-height: 1.7em;
+}
+
+/* Links */
+#links {
+  padding: 0 1em;
+}
+
+.link {
+  float: left;
+  width: 20%;
+  padding: 3em 0;
+  text-align: center;
+}
+
+.link:hover {
+  background: #00023e;
+  color: white;
+}
+
+/* Footer */
+#footer {
+  text-align: center;
+}
+
+#footer,
+.push {
+  height: 50px;
+}
+
+#footer p {
+  padding: 1em;
+}
