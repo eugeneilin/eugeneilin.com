@@ -132,7 +132,7 @@ input[class^='btn-']:hover {
 
     &:hover {
       background: #fff;
-      transition: all 0.5s ease-in-out;
+      transition: background 0.5s ease-in-out;
     }
   }
 }
