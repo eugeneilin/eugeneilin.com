@@ -114,7 +114,27 @@ input[class^='btn-']:hover {
 .bottom-line {
   height: 2px;
   width: 3rem;
-  background: $main-color;
+  background: $medium-color;
   display: block;
   margin: 0 auto 1rem;
 }
+
+// Grid
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 1rem;
+
+  &-item {
+    padding: 2rem;
+    background: $light-color;
+    border-radius: 5px;
+
+    &:hover {
+      background: #fff;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}
+
+// Flex

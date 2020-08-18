@@ -87,9 +87,21 @@ input[class^='btn-']:hover {
 .bottom-line {
   height: 2px;
   width: 3rem;
-  background: #00023e;
+  background: #3e418f;
   display: block;
   margin: 0 auto 1rem; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 1rem; }
+  .grid-item {
+    padding: 2rem;
+    background: #f4f4f4;
+    border-radius: 5px; }
+    .grid-item:hover {
+      background: #fff;
+      transition: all 0.5s ease-in-out; }
 
 * {
   margin: 0;
@@ -120,8 +132,9 @@ img {
 #logo {
   color: #fff; }
   #logo:hover {
-    opacity: 0.7;
-    transition: opacity 0.5s; }
+    opacity: 0.9;
+    transition: all 0.5s;
+    color: #f4f4f4; }
 
 #main-nav {
   display: flex;
@@ -148,3 +161,65 @@ img {
   background: url("/../dist/img/scene10_0095.jpg") no-repeat center right/cover;
   height: 100vh;
   color: #fff; }
+
+#home-a .youtube-embed-wrapper {
+  padding: 0px 0 39.4%;
+  position: relative; }
+
+#home-a .youtube-embed-item {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: 70%;
+  transform: translateX(-50%); }
+
+#home-a .youtube-sub {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+  z-index: 5; }
+  #home-a .youtube-sub i {
+    padding: 0 1rem;
+    color: #3e418f; }
+
+#home-b .grid {
+  padding-bottom: 4rem; }
+  #home-b .grid .fa-spotify {
+    color: #1db954; }
+  #home-b .grid .fa-apple {
+    color: #555555; }
+  #home-b .grid .fa-deezer {
+    color: #ffc2e5; }
+  #home-b .grid .fa-amazon {
+    color: #ff9900; }
+  #home-b .grid-item {
+    text-align: center; }
+    #home-b .grid-item i {
+      padding-right: 2rem; }
+    #home-b .grid-item p {
+      color: #00023e; }
+
+#main-footer {
+  background: #f4f4f4;
+  color: #00023e;
+  height: 5rem; }
+  #main-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center; }
+    #main-footer .footer-content .social .fab {
+      margin-right: 1rem;
+      border: 2px #00023e solid;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.5rem;
+      cursor: pointer; }
+      #main-footer .footer-content .social .fab:hover {
+        background: #fff; }
