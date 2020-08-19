@@ -156,12 +156,12 @@ input[class^='btn-']:hover {
         border-color: #3e418f; }
 
 #header-home {
-  background: url("/../dist/img/home-header.jpg") no-repeat center right/cover;
+  background: url("../dist/img/home-header.jpg") no-repeat center right/cover;
   height: 100vh;
   color: #fff; }
 
 #header-about {
-  background: url("/../dist/img/about-header.jpg") center center/cover;
+  background: url("../dist/img/about-header.jpg") center center/cover;
   height: 100vh;
   color: #fff; }
   #header-about .header-content p {
