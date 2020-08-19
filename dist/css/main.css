@@ -156,14 +156,16 @@ input[class^='btn-']:hover {
         border-color: #3e418f; }
 
 #header-home {
-  background: url("../dist/img/home-header.jpg") no-repeat center right/cover;
+  background: url("../img/home-header.jpg") no-repeat center right/cover;
   height: 100vh;
-  color: #fff; }
+  color: #fff;
+  display: block; }
 
 #header-about {
-  background: url("../dist/img/about-header.jpg") center center/cover;
+  background: url("../img/about-header.jpg") center center/cover;
   height: 100vh;
-  color: #fff; }
+  color: #fff;
+  display: block; }
   #header-about .header-content p {
     top: 53vh;
     font-size: 1.4rem;
