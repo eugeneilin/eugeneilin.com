@@ -10,7 +10,8 @@ body {
   background: #fff; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #333; }
 
 ul {
   list-style: none; }
@@ -126,7 +127,7 @@ input[class^='btn-']:hover {
     border-radius: 5px; }
     .grid-item:hover {
       background: #fff;
-      transition: all 0.5s ease-in-out; }
+      transition: background 0.5s ease-in-out; }
 
 #logo {
   color: #fff; }
@@ -139,7 +140,8 @@ input[class^='btn-']:hover {
   display: flex;
   justify-content: space-between;
   padding-top: 2rem;
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  z-index: 5; }
   #main-nav ul {
     display: flex; }
   #main-nav li {
@@ -157,9 +159,22 @@ input[class^='btn-']:hover {
         border-color: #3e418f; }
 
 #header-home {
-  background: url("/../dist/img/scene10_0095.jpg") no-repeat center right/cover;
+  background: url("/../dist/img/home-header.jpg") no-repeat center right/cover;
   height: 100vh;
   color: #fff; }
+
+#header-about {
+  background: url("/../dist/img/about-header.jpg") center center/cover;
+  height: 100vh;
+  color: #fff; }
+  #header-about .header-content p {
+    top: 53vh;
+    font-size: 1.4rem;
+    text-transform: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase; }
 
 #home-a .youtube-embed-wrapper {
   padding: 0px 0 39.4%;
@@ -178,7 +193,7 @@ input[class^='btn-']:hover {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   z-index: 5; }
   #home-a .youtube-sub i {
     padding: 0 1rem;
@@ -200,6 +215,15 @@ input[class^='btn-']:hover {
       padding-right: 2rem; }
     #home-b .grid-item p {
       color: #00023e; }
+
+#about-a .bio-facebook-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem; }
+
+#about-a .about-p {
+  padding: 0.5rem;
+  font-size: 1.1rem; }
 
 #main-footer {
   background: #f4f4f4;

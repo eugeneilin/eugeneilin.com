@@ -18,6 +18,8 @@
   justify-content: space-between;
   padding-top: 2rem;
   padding-bottom: 1rem;
+  z-index: 5;
+
   ul {
     display: flex;
   }
@@ -50,21 +52,27 @@
   &-home {
     background: $bg-image no-repeat center right / cover;
     height: 100vh;
+    color: #fff;
+  }
 
+  // Header About
+  &-about {
+    background: $bg-image-about center center / cover;
+    height: 100vh;
     color: #fff;
 
     // Header Content
-    // .header-content {
-    // p {
-    //   top: 53vh;
-    //   font-size: 1.4rem;
-    //   text-transform: none;
-    //   position: absolute;
-    //   left: 50%;
-    //   transform: translateX(-50%);
-    //   text-transform: uppercase;
-    // }
-    // }
+    .header-content {
+      p {
+        top: 53vh;
+        font-size: 1.4rem;
+        text-transform: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-transform: uppercase;
+      }
+    }
   }
 
   // // Header Inner
@@ -99,7 +107,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        padding: 1.5rem 0;
+        padding: 2rem 0;
         z-index: 5;
 
         i {
@@ -138,6 +146,26 @@
           color: $main-color;
         }
       }
+    }
+  }
+}
+
+// About Sections
+#about {
+  // Section A
+  &-a {
+    .bio-facebook-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 1rem;
+    }
+
+    .about-p {
+      padding: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .facebook-embed {
     }
   }
 }
