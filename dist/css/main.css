@@ -125,9 +125,6 @@ input[class^='btn-']:hover {
     padding: 2rem;
     background: #f4f4f4;
     border-radius: 5px; }
-    .grid-item:hover {
-      background: #fff;
-      transition: background 0.5s ease-in-out; }
 
 #logo {
   color: #fff; }
@@ -200,21 +197,23 @@ input[class^='btn-']:hover {
     color: #3e418f; }
 
 #home-b .grid {
-  padding-bottom: 4rem; }
-  #home-b .grid .fa-spotify {
-    color: #1db954; }
-  #home-b .grid .fa-apple {
-    color: #555555; }
-  #home-b .grid .fa-deezer {
-    color: #ffc2e5; }
-  #home-b .grid .fa-amazon {
-    color: #ff9900; }
-  #home-b .grid-item {
-    text-align: center; }
-    #home-b .grid-item i {
-      padding-right: 2rem; }
-    #home-b .grid-item p {
-      color: #00023e; }
+  padding-bottom: 3.5rem; }
+  #home-b .grid-item .fab {
+    color: #333; }
+  #home-b .grid-item:hover .fa-spotify {
+    color: #1db954;
+    transition: color ease-in-out 0.1s; }
+  #home-b .grid-item:hover .fa-apple {
+    color: #555555;
+    transition: color ease-in-out 0.1s; }
+  #home-b .grid-item:hover .fa-deezer {
+    color: #ffc2e5;
+    transition: color ease-in-out 0.1s; }
+  #home-b .grid-item:hover .fa-amazon {
+    color: #ff9900;
+    transition: color ease-in-out 0.1s; }
+  #home-b .grid-item p {
+    color: #00023e; }
 
 #about-a .bio-facebook-grid {
   display: grid;
@@ -245,4 +244,17 @@ input[class^='btn-']:hover {
       padding: 0.5rem;
       cursor: pointer; }
       #main-footer .footer-content .social .fab:hover {
-        background: #fff; }
+        background: #fff;
+        transition: background ease-in-out 0.1s; }
+    #main-footer .footer-content .social .fa-viber:hover {
+      color: #665cac;
+      transition: color ease-in-out 0.1s; }
+    #main-footer .footer-content .social .fa-youtube:hover {
+      color: #ff0000;
+      transition: color ease-in-out 0.1s; }
+    #main-footer .footer-content .social .fa-facebook:hover {
+      color: #1877f2;
+      transition: color ease-in-out 0.1s; }
+    #main-footer .footer-content .social .fa-instagram:hover {
+      color: #833ab4;
+      transition: color ease-in-out 0.1s; }

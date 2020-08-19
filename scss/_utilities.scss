@@ -129,12 +129,5 @@ input[class^='btn-']:hover {
     padding: 2rem;
     background: $light-color;
     border-radius: 5px;
-
-    &:hover {
-      background: #fff;
-      transition: background 0.5s ease-in-out;
-    }
   }
 }
-
-// Flex
