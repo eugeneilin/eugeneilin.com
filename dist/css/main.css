@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'quicksand', sans-serif;
+  font-weight: 200;
+  font-style: normal; }
+
+body {
+  line-height: 1.6;
+  background: #fff; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase; }
+
+img {
+  width: 100%; }
+
+.container {
+  max-width: 1100px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+
+.btn-main, .btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer; }
+
+.btn-main {
+  color: #333;
+  background-color: #00023e; }
+
+.btn-light {
+  color: #333;
+  background-color: #f4f4f4; }
+
+.btn-dark {
+  color: #f4f4f4;
+  background-color: #333; }
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+  background-color: #333;
+  color: #fff; }
+
+.bg-main {
+  background: #00023e;
+  color: #fff; }
+
+.bg-dark {
+  background: #333;
+  color: #fff; }
+
+.bg-light {
+  background: #f4f4f4;
+  color: #000; }
+
+.bg-medium {
+  background: #3e418f;
+  color: #fff; }
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem; }
+
+.text-center {
+  text-align: center; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.py-4 {
+  padding: 4rem 0; }
+
+.my-1 {
+  margin: 1rem 0; }
+
+.my-2 {
+  margin: 2rem 0; }
+
+.my-3 {
+  margin: 3rem 0; }
+
+.my-4 {
+  margin: 4rem 0; }
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase; }
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: #3e418f;
+  display: block;
+  margin: 0 auto 1rem; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 1rem; }
+  .grid-item {
+    padding: 2rem;
+    background: #f4f4f4;
+    border-radius: 5px; }
+    .grid-item:hover {
+      background: #fff;
+      transition: all 0.5s ease-in-out; }
+
+#logo {
+  color: #fff; }
+  #logo:hover {
+    opacity: 0.9;
+    transition: all 0.5s;
+    color: #f4f4f4; }
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 1rem; }
+  #main-nav ul {
+    display: flex; }
+  #main-nav li {
+    padding: 0 1.5rem; }
+    #main-nav li a {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      border-bottom: 2px transparent solid;
+      padding-bottom: 0.5rem;
+      transition: border-color 0.5s; }
+      #main-nav li a:hover {
+        border-color: #f4f4f4; }
+      #main-nav li a.current {
+        border-color: #3e418f; }
+
+#header-home {
+  background: url("/../dist/img/scene10_0095.jpg") no-repeat center right/cover;
+  height: 100vh;
+  color: #fff; }
+
+#home-a .youtube-embed-wrapper {
+  padding: 0px 0 39.4%;
+  position: relative; }
+
+#home-a .youtube-embed-item {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: 70%;
+  transform: translateX(-50%); }
+
+#home-a .youtube-sub {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+  z-index: 5; }
+  #home-a .youtube-sub i {
+    padding: 0 1rem;
+    color: #3e418f; }
+
+#home-b .grid {
+  padding-bottom: 4rem; }
+  #home-b .grid .fa-spotify {
+    color: #1db954; }
+  #home-b .grid .fa-apple {
+    color: #555555; }
+  #home-b .grid .fa-deezer {
+    color: #ffc2e5; }
+  #home-b .grid .fa-amazon {
+    color: #ff9900; }
+  #home-b .grid-item {
+    text-align: center; }
+    #home-b .grid-item i {
+      padding-right: 2rem; }
+    #home-b .grid-item p {
+      color: #00023e; }
+
+#main-footer {
+  background: #f4f4f4;
+  color: #00023e;
+  height: 5rem; }
+  #main-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center; }
+    #main-footer .footer-content .social .fab {
+      margin-right: 1rem;
+      border: 2px #00023e solid;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.5rem;
+      cursor: pointer; }
+      #main-footer .footer-content .social .fab:hover {
+        background: #fff; }
