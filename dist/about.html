@@ -104,14 +104,18 @@
       </div>
     </section>
 
-    <!-- Section B: Bio and Facebook -->
-    <section id="about-b" class="text-center bg-dark">
+    <!-- Section B: Instagram -->
+    <section id="about-b" class="text-center bg-white">
       <div class="container py-2">
         <h2 class="section-title">Latest Photos</h2>
         <div class="bottom-line"></div>
         <p class="lead">
           Follow us to stay in touch.
         </p>
+        <div
+          class="embedsocial-instagram"
+          data-ref="5fc521ce0f42e4472470beea553019bcb3851c0e"
+        ></div>
       </div>
     </section>
 
@@ -142,5 +146,17 @@
     </footer>
 
     <script src="https://apis.google.com/js/platform.js"></script>
+    <script>
+      (function (d, s, id) {
+        var js;
+        if (d.getElementById(id)) {
+          return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://embedsocial.com/embedscript/in.js';
+        d.getElementsByTagName('head')[0].appendChild(js);
+      })(document, 'script', 'EmbedSocialInstagramScript');
+    </script>
   </body>
 </html>
