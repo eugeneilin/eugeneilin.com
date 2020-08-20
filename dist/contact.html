@@ -18,8 +18,8 @@
   <body>
     <!-- Header -->
     <header id="header-contact">
-      <div class="container">
-        <nav id="main-nav">
+      <nav id="main-nav" class="top">
+        <div class="container">
           <a href="index.html">
             <h1 id="logo">Eugene Ilin</h1>
           </a>
@@ -30,15 +30,8 @@
             <li><a href="blog.html">Blog</a></li> -->
             <li><a href="contact.html" class="current">Contact</a></li>
           </ul>
-        </nav>
-        <div class="header-content">
-          <p
-            class="txt-type"
-            data-wait="3000"
-            data-words='["Pianist", "Composer", "Arranger", "Singer", "Teacher"]'
-          ></p>
         </div>
-      </div>
+      </nav>
     </header>
 
     <!-- Section A: Contact Form -->
@@ -85,35 +78,12 @@
       </div>
     </section>
 
-    <!-- Section B: Contact Info -->
-    <section id="contact-b" class="py-3 bg-dark">
-      <div class="container">
-        <div class="contact-info">
-          <div>
-            <i class="fas fa-envelope fa-2x"></i>
-            <h3>Email</h3>
-            <p>john@something.com</p>
-          </div>
-          <div>
-            <i class="fas fa-phone fa-2x"></i>
-            <h3>Phone</h3>
-            <p>(555) 555-5555</p>
-          </div>
-          <div>
-            <i class="fas fa-address-card fa-2x"></i>
-            <h3>Address</h3>
-            <p>40 Main Street, Sacramento, CA</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Footer -->
     <footer id="main-footer">
       <div class="footer-content container">
         <p>&copy; 2020 All Rights Reserved.</p>
         <p>
-          Designed and devloped by Eugene Ilin.
+          Designed and developed by Eugene Ilin.
         </p>
         <div class="social">
           <a
@@ -134,18 +104,7 @@
       </div>
     </footer>
 
-    <script src="https://apis.google.com/js/platform.js"></script>
-    <script>
-      (function (d, s, id) {
-        var js;
-        if (d.getElementById(id)) {
-          return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = 'https://embedsocial.com/embedscript/in.js';
-        d.getElementsByTagName('head')[0].appendChild(js);
-      })(document, 'script', 'EmbedSocialInstagramScript');
-    </script>
+    <!-- Transparent Nav -->
+    <script src="js/transparent_nav.js"></script>
   </body>
 </html>
