@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3753b9f2a4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/jgr8qaq.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Eugene Ilin | Musician</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header-contact">
+      <div class="container">
+        <nav id="main-nav">
+          <a href="index.html">
+            <h1 id="logo">Eugene Ilin</h1>
+          </a>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <!-- <li><a href="store.html">Store</a></li>
+            <li><a href="blog.html">Blog</a></li> -->
+            <li><a href="contact.html" class="current">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-content">
+          <p
+            class="txt-type"
+            data-wait="3000"
+            data-words='["Pianist", "Composer", "Arranger", "Singer", "Teacher"]'
+          ></p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section A: Contact Form -->
+    <section id="contact-a" class="text-center py-3">
+      <div class="container">
+        <h2 class="section-title">Get in touch</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">Please fill out this form.</p>
+        <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+          <div class="text-fields">
+            <input
+              type="text"
+              class="text-input name-input"
+              placeholder="Name"
+              name="name"
+              required
+            />
+            <input
+              type="text"
+              class="text-input subject-input"
+              placeholder="Subject"
+              name="subject"
+              required
+            />
+            <input
+              type="email"
+              class="text-input email-input"
+              placeholder="Email Address"
+              name="email"
+              required
+            />
+            <textarea
+              class="text-input message-input"
+              placeholder="Message"
+              name="message"
+              required
+            ></textarea>
+            <div class="my-2">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+          </div>
+          <button type="submit" class="btn-medium">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Section B: Contact Info -->
+    <section id="contact-b" class="py-3 bg-dark">
+      <div class="container">
+        <div class="contact-info">
+          <div>
+            <i class="fas fa-envelope fa-2x"></i>
+            <h3>Email</h3>
+            <p>john@something.com</p>
+          </div>
+          <div>
+            <i class="fas fa-phone fa-2x"></i>
+            <h3>Phone</h3>
+            <p>(555) 555-5555</p>
+          </div>
+          <div>
+            <i class="fas fa-address-card fa-2x"></i>
+            <h3>Address</h3>
+            <p>40 Main Street, Sacramento, CA</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+      <div class="footer-content container">
+        <p>&copy; 2020 All Rights Reserved.</p>
+        <p>
+          Designed and devloped by Eugene Ilin.
+        </p>
+        <div class="social">
+          <a
+            href="https://invite.viber.com/?g2=AQBosgzBe4Gx%2F0vZZwSd6Emw%2Fhd%2BBjJUMva83eEkMB3fIKm%2FDjNfSLhvp56Wcajz"
+            target="_blank"
+            ><i class="fab fa-viber"></i
+          ></a>
+          <a href="https://www.youtube.com/EugeneIlinOfficial" target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a href="https://www.facebook.com/EugeneIlinsMusic" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/eugeneilinsmusic/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <script>
+      (function (d, s, id) {
+        var js;
+        if (d.getElementById(id)) {
+          return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://embedsocial.com/embedscript/in.js';
+        d.getElementsByTagName('head')[0].appendChild(js);
+      })(document, 'script', 'EmbedSocialInstagramScript');
+    </script>
+  </body>
+</html>
