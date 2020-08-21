@@ -30,6 +30,10 @@
     }
   }
 
+  #main-footer {
+    background: $light-color;
+  }
+
   // Utilities
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -51,13 +55,11 @@
 
 // Desktops
 @media (min-width: 900px) {
-  // Logo
-  .logo {
-    text-align: center;
-    padding-bottom: 1rem;
+  // Nav Controls
+  .hb-menu-wrap {
+    display: none;
   }
 
-  // Main Nav
   #main-nav {
     .container {
       flex-direction: row;
@@ -71,5 +73,74 @@
     li {
       padding: 0 1rem 1rem;
     }
+  }
+
+  // Header Controls
+  #header {
+    &-home {
+      background-position: center center / cover;
+      height: 100vh;
+    }
+
+    &-about {
+      background: $bg-image-about no-repeat 55% 50% / cover;
+      height: 40vh;
+    }
+
+    &-contact {
+      background: $bg-image-contact no-repeat 55% 80% / cover;
+      height: 40vh;
+    }
+  }
+
+  // Sections
+  #home {
+    &-b {
+      .grid {
+        padding-bottom: 3rem;
+      }
+    }
+  }
+
+  #about {
+    &-a {
+      .bio-facebook-grid {
+        grid-template-columns: 2fr 1fr;
+      }
+    }
+  }
+
+  #contact {
+    &-a {
+      form {
+        width: 50vw;
+      }
+
+      button[type='submit'] {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  // Footer
+  #main-footer {
+    .footer-content {
+      flex-direction: row;
+
+      * {
+        padding: 0;
+      }
+
+      .social {
+        padding-top: 0;
+      }
+    }
+  }
+
+  // Utilities
+  .grid {
+    grid-template-columns: 2fr 2fr;
+    max-width: $website-width;
+    margin: 0 auto;
   }
 }

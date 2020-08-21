@@ -61,7 +61,7 @@
 
 // Header Sections
 #header {
-  // Main-nav effect
+  // Main-nav transparency effect
   &-home,
   &-about,
   &-contact {
@@ -160,7 +160,7 @@
 
       &-item {
         .fab {
-          color: $dark-color;
+          color: $main-color;
         }
 
         &:hover {
