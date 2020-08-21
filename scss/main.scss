@@ -80,16 +80,16 @@
 
   // About Header
   &-about {
-    background: $bg-image-about no-repeat center 50% / cover;
-    height: 40vh;
+    background: $bg-image-about no-repeat 55% 40% / 135%;
+    height: 25vh;
     color: #fff;
     display: block;
   }
 
   // Contact Header
   &-contact {
-    background: $bg-image-contact no-repeat center 90% / cover;
-    height: 40vh;
+    background: $bg-image-contact no-repeat center center / cover;
+    height: 25vh;
     color: #fff;
     display: block;
   }
@@ -195,9 +195,14 @@
 #about {
   // Section A
   &-a {
+    .py-2 {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
     .bio-facebook-grid {
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      // grid-template-columns: 2fr 1fr;
       grid-gap: 1rem;
     }
 
@@ -207,9 +212,14 @@
     }
 
     .facebook-embed {
+      display: none;
       border: 2px solid $dark-color;
       border-radius: 3px;
     }
+  }
+  // Section B
+  &-b {
+    display: none;
   }
 }
 
@@ -217,7 +227,7 @@
 #contact {
   &-a {
     form {
-      width: 50vw;
+      width: 80vw;
       margin: 0 auto;
     }
 
