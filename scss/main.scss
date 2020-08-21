@@ -1,10 +1,13 @@
 @import 'reset';
 @import 'config';
 @import 'utilities';
+@import 'hamburger-menu';
 
 // Logo
 #logo {
   color: #fff;
+  padding-left: 1rem;
+
   &:hover {
     opacity: 0.9;
     transition: all 0.5s;
@@ -21,19 +24,21 @@
   position: fixed;
   top: 0px;
   width: 100%;
-  z-index: 5;
+  // z-index: 5;
 
   .container {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
   }
 
   ul {
-    display: flex;
+    display: none;
+    justify-content: center;
   }
 
   li {
-    padding: 0 1.5rem;
+    padding: 0 1rem 1rem;
 
     a {
       text-decoration: none;
@@ -67,8 +72,8 @@
 
   // Home Header
   &-home {
-    background: $bg-image no-repeat center center / cover;
-    height: 100vh;
+    background: $bg-image no-repeat 25% 100% / cover;
+    height: 60vh;
     color: #fff;
     display: block;
   }
@@ -130,7 +135,7 @@
       }
 
       &-sub {
-        display: flex;
+        display: none;
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -146,8 +151,13 @@
   }
 
   &-b {
+    .py-2 {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
     .grid {
-      padding-bottom: 3.5rem;
+      padding-bottom: 1rem;
 
       &-item {
         .fab {
@@ -247,17 +257,22 @@
 
 // Footer
 #main-footer {
-  background: $light-color;
   color: $main-color;
-  height: 5rem;
 
   .footer-content {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    height: 5rem;
     align-items: center;
+    padding: 1rem;
+
+    * {
+      padding: 0.3rem;
+    }
 
     .social {
+      padding-top: 1rem;
+
       .fab {
         margin-right: 1rem;
         border: 2px $main-color solid;
@@ -294,3 +309,6 @@
     }
   }
 }
+
+// Import Media Queries
+@import 'media';

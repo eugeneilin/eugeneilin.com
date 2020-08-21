@@ -1,0 +1,28 @@
+// Tablets and up
+@media (min-width: 768px) {
+  // Logo
+  .logo {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  // Main Nav
+  #main-nav {
+    .container {
+      flex-direction: row;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    li {
+      padding: 0 1rem 1rem;
+    }
+  }
+}
+
+// Desktops
+@media (min-width: 900px) {
+}

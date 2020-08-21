@@ -132,8 +132,9 @@ input[class^='btn-']:hover {
 // Grid
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-gap: 1rem;
+  // grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 0.5rem;
+  margin: 0 0.5rem;
 
   &-item {
     padding: 2rem;
