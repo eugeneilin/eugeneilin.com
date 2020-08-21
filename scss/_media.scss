@@ -71,7 +71,7 @@
     }
 
     li {
-      padding: 0 1rem 1rem;
+      padding: 0 1.3rem 1rem;
     }
   }
 
@@ -139,7 +139,6 @@
 
   // Utilities
   .grid {
-    grid-template-columns: 2fr 2fr;
     max-width: $website-width;
     margin: 0 auto;
   }

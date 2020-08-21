@@ -42,7 +42,7 @@ img {
   background-color: #00023e; }
 
 .btn-light {
-  color: #333;
+  color: #00023e;
   background-color: #f4f4f4; }
 
 .btn-medium {
@@ -138,7 +138,7 @@ input[class^='btn-']:hover {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1; }
+  z-index: 10; }
   .hb-menu-wrap .toggler {
     position: absolute;
     top: 0;
@@ -255,7 +255,8 @@ input[class^='btn-']:hover {
   transition: 0.5s;
   position: fixed;
   top: 0px;
-  width: 100%; }
+  width: 100%;
+  z-index: 5; }
   #main-nav .container {
     display: flex;
     justify-content: space-between;
@@ -323,8 +324,7 @@ input[class^='btn-']:hover {
   display: none;
   align-items: center;
   justify-content: center;
-  padding: 2rem 0;
-  z-index: 5; }
+  padding: 2rem 0; }
   #home-a .youtube-sub i {
     padding: 0 1rem;
     color: #3e418f; }
@@ -468,7 +468,7 @@ input[class^='btn-']:hover {
     display: flex;
     justify-content: space-between; }
   #main-nav li {
-    padding: 0 1rem 1rem; }
+    padding: 0 1.3rem 1rem; }
   #header-home {
     background-position: center center / cover;
     height: 100vh; }
@@ -493,6 +493,5 @@ input[class^='btn-']:hover {
     #main-footer .footer-content .social {
       padding-top: 0; }
   .grid {
-    grid-template-columns: 2fr 2fr;
     max-width: 1100px;
     margin: 0 auto; } }

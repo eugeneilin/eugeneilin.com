@@ -23,7 +23,7 @@
 
   &-light {
     @extend %btn-shared;
-    color: #333;
+    color: $main-color;
     background-color: $light-color;
   }
 
