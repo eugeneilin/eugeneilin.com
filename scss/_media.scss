@@ -1,5 +1,56 @@
 // Tablets and up
 @media (min-width: 768px) {
+  #home {
+    &-a {
+      .youtube {
+        &-sub {
+          display: flex;
+        }
+      }
+    }
+
+    &-b {
+      .grid {
+        padding-bottom: 1.5rem;
+      }
+    }
+  }
+
+  #about {
+    &-a {
+      .facebook-embed {
+        display: block;
+        border: none;
+        margin: 0 auto;
+      }
+    }
+
+    &-b {
+      display: block;
+    }
+  }
+
+  // Utilities
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    &-item {
+      padding: 1.2rem;
+    }
+  }
+
+  // Hamburger Menu -- Man! I really want a good hamburger by now!!:D
+  .hb-menu-wrap {
+    .menu {
+      li {
+        padding: 3rem 15rem;
+      }
+    }
+  }
+}
+
+// Desktops
+@media (min-width: 900px) {
   // Logo
   .logo {
     text-align: center;
@@ -21,8 +72,4 @@
       padding: 0 1rem 1rem;
     }
   }
-}
-
-// Desktops
-@media (min-width: 900px) {
 }

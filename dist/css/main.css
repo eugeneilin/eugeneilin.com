@@ -138,7 +138,7 @@ input[class^='btn-']:hover {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 10; }
+  z-index: 1; }
   .hb-menu-wrap .toggler {
     position: absolute;
     top: 0;
@@ -234,13 +234,11 @@ input[class^='btn-']:hover {
       list-style: none;
       color: #fff;
       font-size: 1.5rem;
-      padding: 1.8rem 2rem; }
+      padding: 2rem 7rem; }
     .hb-menu-wrap .menu a {
       color: inherit;
       text-decoration: none;
       transition: color 0.4s ease; }
-    .hb-menu-wrap .menu a:focus {
-      color: #3e418f; }
 
 #logo {
   color: #fff;
@@ -323,7 +321,6 @@ input[class^='btn-']:hover {
 
 #home-a .youtube-sub {
   display: none;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 2rem 0;
@@ -443,6 +440,24 @@ input[class^='btn-']:hover {
         transition: color ease-in-out 0.1s; }
 
 @media (min-width: 768px) {
+  #home-a .youtube-sub {
+    display: flex; }
+  #home-b .grid {
+    padding-bottom: 1.5rem; }
+  #about-a .facebook-embed {
+    display: block;
+    border: none;
+    margin: 0 auto; }
+  #about-b {
+    display: block; }
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+    .grid-item {
+      padding: 1.2rem; }
+  .hb-menu-wrap .menu li {
+    padding: 3rem 15rem; } }
+
+@media (min-width: 900px) {
   .logo {
     text-align: center;
     padding-bottom: 1rem; }
