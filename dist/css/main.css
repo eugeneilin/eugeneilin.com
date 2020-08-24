@@ -362,15 +362,12 @@ input[class^='btn-']:hover {
 
 #about-a .about-p {
   padding: 0.5rem;
-  font-size: 1.1rem; }
+  font-size: 1.15rem; }
 
 #about-a .facebook-embed {
   display: none;
   border: 2px solid #333;
   border-radius: 3px; }
-
-#about-b {
-  display: none; }
 
 #contact-a form {
   width: 80vw;
