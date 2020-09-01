@@ -11,7 +11,10 @@ body {
 
 a {
   text-decoration: none;
-  color: #333; }
+  color: #00023e; }
+
+a:hover {
+  color: #3e418f; }
 
 ul {
   list-style: none; }
