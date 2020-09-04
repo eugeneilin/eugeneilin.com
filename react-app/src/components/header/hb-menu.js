@@ -1,26 +1,27 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function HBMenu() {
   return (
     <Fragment>
-      <div class='hb-menu-wrap'>
-        <input type='checkbox' class='toggler' />
-        <div class='hamburger'>
+      <div className='hb-menu-wrap'>
+        <input type='checkbox' className='toggler' />
+        <div className='hamburger'>
           <div></div>
         </div>
-        <div class='menu'>
+        <div className='menu'>
           <div>
             <div>
               <ul>
-                <a href='index.html'>
+                <Link to='index.html'>
                   <li>Home</li>
-                </a>
-                <a href='about.html'>
+                </Link>
+                <Link to='about.html'>
                   <li>About</li>
-                </a>
-                <a href='contact.html'>
+                </Link>
+                <Link to='contact.html'>
                   <li>Contact</li>
-                </a>
+                </Link>
               </ul>
             </div>
           </div>

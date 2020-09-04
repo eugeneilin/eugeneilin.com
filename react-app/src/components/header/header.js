@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import HBMenu from './hb-menu';
 import Navigation from './navigation';
-import Hero from './hero';
 
 const navigationLinks = [
   {
