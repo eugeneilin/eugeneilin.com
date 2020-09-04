@@ -19,5 +19,22 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
+    <!-- Youtube Embed Code -->
+    <script src="https://apis.google.com/js/platform.js"></script>
+
+    <!-- Instagram Embed -->
+    <script>
+      (function (d, s, id) {
+        var js;
+        if (d.getElementById(id)) {
+          return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://embedsocial.com/embedscript/in.js';
+        d.getElementsByTagName('head')[0].appendChild(js);
+      })(document, 'script', 'EmbedSocialInstagramScript');
+    </script>
   </body>
 </html>
