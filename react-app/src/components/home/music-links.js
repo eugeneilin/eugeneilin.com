@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 export default function MusicLinks() {
   return (
@@ -11,8 +10,8 @@ export default function MusicLinks() {
           Listen to our music on your favorite streaming platform.
         </p>
         <div className='grid'>
-          <Link
-            to='https://open.spotify.com/artist/6AHLjmKMwEE0SZsMAydk56?si=o6HClVBPTKag-8r6f16wog'
+          <a
+            href='https://open.spotify.com/artist/6AHLjmKMwEE0SZsMAydk56?si=o6HClVBPTKag-8r6f16wog'
             target='_blank'
           >
             <div className='grid-item'>
@@ -21,9 +20,9 @@ export default function MusicLinks() {
                 <p>Spotify</p>
               </div>
             </div>
-          </Link>
-          <Link
-            to='https://music.apple.com/us/artist/eugene-ilin/1493335563'
+          </a>
+          <a
+            href='https://music.apple.com/us/artist/eugene-ilin/1493335563'
             target='_blank'
           >
             <div className='grid-item'>
@@ -32,9 +31,9 @@ export default function MusicLinks() {
                 <p>Apple Music</p>
               </div>
             </div>
-          </Link>
-          <Link
-            to='https://www.deezer.com/artist/89486092?utm_source=deezer&utm_content=artist-89486092&utm_term=3564431044_1597776610&utm_medium=web'
+          </a>
+          <a
+            href='https://www.deezer.com/artist/89486092?utm_source=deezer&utm_content=artist-89486092&utm_term=3564431044_1597776610&utm_medium=web'
             target='_blank'
           >
             <div className='grid-item'>
@@ -43,9 +42,9 @@ export default function MusicLinks() {
                 <p>Deezer</p>
               </div>
             </div>
-          </Link>
-          <Link
-            to='https://music.amazon.com/artists/B086GQ5YTL/eugene-ilin'
+          </a>
+          <a
+            href='https://music.amazon.com/artists/B086GQ5YTL/eugene-ilin'
             target='_blank'
           >
             <div className='grid-item'>
@@ -54,7 +53,7 @@ export default function MusicLinks() {
                 <p>Amazon Music</p>
               </div>
             </div>
-          </Link>
+          </a>
         </div>
       </div>
     </section>
