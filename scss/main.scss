@@ -262,9 +262,8 @@
       outline: none;
     }
 
-    .recaptcha {
-      margin: 0 auto;
-      padding: 1rem;
+    .g-recaptcha {
+      display: inline-block;
     }
   }
 }
