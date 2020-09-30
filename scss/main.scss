@@ -10,7 +10,7 @@
 
   &:hover {
     opacity: 0.9;
-    transition: all 0.5s;
+    transition: all $fade-duration;
     color: $light-color;
   }
 }
@@ -20,7 +20,7 @@
   padding-top: 2rem;
   padding-bottom: 1rem;
   background: rgba(0, 2, 62, 0.3);
-  transition: 0.5s;
+  transition: $fade-duration;
   position: fixed;
   top: 0px;
   width: 100%;
@@ -46,7 +46,7 @@
       text-transform: uppercase;
       border-bottom: 2px transparent solid;
       padding-bottom: 0.5rem;
-      transition: border-color 0.5s;
+      transition: border-color $fade-duration;
 
       &:hover {
         border-color: $light-color;
@@ -151,26 +151,35 @@
       padding-bottom: 1rem;
 
       &-item {
-        .fab {
+        transition: background $fade-duration;
+
+        .fab,
+        .fab + p {
           color: $main-color;
+          transition: color $fade-duration;
         }
 
         &:hover {
-          .fa-spotify {
+          background: #fff;
+
+          .fa-spotify,
+          .fa-spotify + p {
             color: #1db954;
-            transition: color ease-in-out 0.1s;
           }
-          .fa-apple {
+
+          .fa-apple,
+          .fa-apple + p {
             color: #555555;
-            transition: color ease-in-out 0.1s;
           }
-          .fa-deezer {
+
+          .fa-deezer,
+          .fa-deezer + p {
             color: #ffc2e5;
-            transition: color ease-in-out 0.1s;
           }
-          .fa-amazon {
+
+          .fa-amazon,
+          .fa-amazon + p {
             color: #ff9900;
-            transition: color ease-in-out 0.1s;
           }
         }
 
@@ -252,6 +261,11 @@
       width: 50%;
       outline: none;
     }
+
+    .recaptcha {
+      display: block;
+      margin: auto;
+    }
   }
 }
 
@@ -266,15 +280,14 @@
     align-items: center;
     padding: 1rem;
 
-    * {
+    p {
       padding: 0.3rem;
     }
 
     .social {
-      padding-top: 1rem;
+      display: flex;
 
-      .fab {
-        margin-right: 1rem;
+      &-link {
         border: 2px $main-color solid;
         border-radius: 50%;
         height: 20px;
@@ -282,29 +295,37 @@
         line-height: 20px;
         text-align: center;
         padding: 0.5rem;
+        margin: 0.5rem;
         cursor: pointer;
+        transition: background $fade-duration;
+
+        .fab {
+          transition: color $fade-duration;
+        }
 
         &:hover {
           background: #fff;
-          transition: background ease-in-out 0.1s;
-        }
-      }
 
-      .fa-viber:hover {
-        color: #665cac;
-        transition: color ease-in-out 0.1s;
-      }
-      .fa-youtube:hover {
-        color: #ff0000;
-        transition: color ease-in-out 0.1s;
-      }
-      .fa-facebook:hover {
-        color: #1877f2;
-        transition: color ease-in-out 0.1s;
-      }
-      .fa-instagram:hover {
-        color: #833ab4;
-        transition: color ease-in-out 0.1s;
+          .fa-viber {
+            color: #665cac;
+          }
+
+          .fa-youtube {
+            color: #ff0000;
+          }
+
+          .fa-facebook {
+            color: #1877f2;
+          }
+
+          .fa-instagram {
+            color: #833ab4;
+          }
+
+          .fa-paypal {
+            color: #00457c;
+          }
+        }
       }
     }
   }

@@ -1,13 +1,14 @@
 // Variables
 $website-width: 1100px;
-$main-color: #00023e;
+$main-color: #00023e; // update in _reset.scss
 $light-color: #f4f4f4;
-$medium-color: #3e418f;
+$medium-color: #3e418f; // update in _reset.scss
 $dark-color: #333;
 $overlay-color: rgba(50, 52, 100, 0.85);
 $bg-image: url('../img/main-header.jpg');
 $bg-image-about: url('../img/about-header.jpg');
 $bg-image-contact: url('../img/contact-header.jpg');
+$fade-duration: 0.3s;
 
 // Set Text Color
 @function set-text-color($color) {
