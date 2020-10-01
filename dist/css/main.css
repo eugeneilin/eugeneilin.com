@@ -130,8 +130,7 @@ input[class^='btn-']:hover {
 
 .grid {
   display: grid;
-  grid-gap: 0.5rem;
-  margin: 0 0.5rem; }
+  grid-gap: 0.5rem; }
   .grid-item {
     padding: 2rem;
     background: #f4f4f4;
@@ -336,6 +335,9 @@ input[class^='btn-']:hover {
   padding-left: 2rem;
   padding-right: 2rem; }
 
+#home-b .spotify-embed {
+  margin-bottom: 3rem; }
+
 #home-b .grid {
   padding-bottom: 1rem; }
   #home-b .grid-item {
@@ -408,8 +410,7 @@ input[class^='btn-']:hover {
   outline: none; }
 
 #contact-a .recaptcha {
-  display: block;
-  margin: auto; }
+  margin: 0 auto; }
 
 #main-footer {
   color: #00023e; }
