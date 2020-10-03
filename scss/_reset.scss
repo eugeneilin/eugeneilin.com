@@ -14,11 +14,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #00023e;
+  color: #00023e; // $main-color in _config.scss
 }
 
 a:hover {
-  color: #3e418f;
+  color: #3e418f; // $medium-color in _config.scss
 }
 
 ul {
