@@ -208,9 +208,9 @@
     }
   }
   // Section B
-  &-b {
-    // display: none;
-  }
+  // &-b {
+  // display: none;
+  // }
 }
 
 // Contact Sections
@@ -311,4 +311,4 @@
 }
 
 // Import Media Queries
-@import './styles/media';
+@import 'styles/_media.scss';
