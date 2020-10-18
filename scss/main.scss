@@ -64,6 +64,7 @@
   // Main-nav transparency effect
   &-home,
   &-about,
+  &-services,
   &-contact {
     .top {
       background-color: transparent;
@@ -235,10 +236,10 @@
 }
 
 // Services Sections
-#services {
-  &-a {
-  }
-}
+// #services {
+//   &-a {
+//   }
+// }
 
 // Contact Sections
 #contact {

@@ -280,7 +280,7 @@ input[class^='btn-']:hover {
       #main-nav li a.current {
         border-color: #3e418f; }
 
-#header-home .top, #header-about .top, #header-contact .top {
+#header-home .top, #header-about .top, #header-services .top, #header-contact .top {
   background-color: transparent; }
 
 #header-home {
