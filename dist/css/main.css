@@ -295,6 +295,12 @@ input[class^='btn-']:hover {
   color: #fff;
   display: block; }
 
+#header-services {
+  background: url("../img/services-header.jpg") no-repeat 0 0/cover;
+  height: 25vh;
+  color: #fff;
+  display: block; }
+
 #header-contact {
   background: url("../img/contact-header.jpg") no-repeat center center/cover;
   height: 25vh;
@@ -461,8 +467,6 @@ input[class^='btn-']:hover {
     margin: 0 auto; }
   #about-b {
     display: block; }
-  #main-footer {
-    background: #f4f4f4; }
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
     .grid-item {
@@ -485,6 +489,9 @@ input[class^='btn-']:hover {
     height: 100vh; }
   #header-about {
     background: url("../img/about-header.jpg") no-repeat 55% 50%/cover;
+    height: 40vh; }
+  #header-services {
+    background: url("../img/services-header.jpg") no-repeat 0 0/cover;
     height: 40vh; }
   #header-contact {
     background: url("../img/contact-header.jpg") no-repeat 55% 80%/cover;
