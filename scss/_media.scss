@@ -30,9 +30,9 @@
     }
   }
 
-  #main-footer {
-    background: $light-color;
-  }
+  // #main-footer {
+  //   background: $light-color;
+  // }
 
   // Utilities
   .grid {
@@ -84,6 +84,11 @@
 
     &-about {
       background: $bg-image-about no-repeat 55% 50% / cover;
+      height: 40vh;
+    }
+
+    &-services {
+      background: $bg-image-services no-repeat 0 0 / cover;
       height: 40vh;
     }
 
