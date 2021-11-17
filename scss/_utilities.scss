@@ -76,6 +76,10 @@ input[class^='btn-']:hover {
   margin-bottom: 2rem;
 }
 
+.bold {
+  font-weight: 500;
+}
+
 .text-center {
   text-align: center;
 }
@@ -121,7 +125,7 @@ input[class^='btn-']:hover {
   text-transform: uppercase;
 }
 
-.bottom-line {
+.divider {
   height: 2px;
   width: 3rem;
   background: $medium-color;
@@ -138,5 +142,11 @@ input[class^='btn-']:hover {
     padding: 2rem;
     background: $light-color;
     border-radius: 5px;
+  }
+
+  &-blog-item {
+    border-radius: 5px;
+    border: 1px solid silver;
+    text-align: left;
   }
 }
