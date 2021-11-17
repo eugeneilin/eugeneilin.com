@@ -6,6 +6,14 @@
         &-sub {
           display: flex;
         }
+
+        &-sub {
+          padding: 2rem 0;
+
+          i {
+            display: block;
+          }
+        }
       }
     }
 
@@ -16,19 +24,19 @@
     }
   }
 
-  #about {
-    &-a {
-      .facebook-embed {
-        display: block;
-        border: none;
-        margin: 0 auto;
-      }
-    }
+  // #about {
+  //   &-a {
+  //     .facebook-embed {
+  //       display: block;
+  //       border: none;
+  //       margin: 0 auto;
+  //     }
+  //   }
 
-    &-b {
-      display: block;
-    }
-  }
+  //   &-b {
+  //     display: block;
+  //   }
+  // }
 
   // #main-footer {
   //   background: $light-color;
@@ -43,7 +51,7 @@
     }
   }
 
-  // Hamburger Menu -- Man! I really want a good hamburger by now!!:D
+  // Hamburger Menu
   .hb-menu-wrap {
     .menu {
       li {
@@ -82,20 +90,20 @@
       height: 100vh;
     }
 
-    &-about {
-      background: $bg-image-about no-repeat 55% 50% / cover;
+    &-blog {
+      background: $bg-image-blog no-repeat 55% 50% / cover;
       height: 40vh;
     }
 
-    &-services {
-      background: $bg-image-services no-repeat 0 0 / cover;
-      height: 40vh;
-    }
+    // &-services {
+    //   background: $bg-image-services no-repeat 0 0 / cover;
+    //   height: 40vh;
+    // }
 
-    &-contact {
-      background: $bg-image-contact no-repeat 55% 80% / cover;
-      height: 40vh;
-    }
+    // &-contact {
+    //   background: $bg-image-contact no-repeat 55% 80% / cover;
+    //   height: 40vh;
+    // }
   }
 
   // Sections
@@ -107,25 +115,25 @@
     }
   }
 
-  #about {
-    &-a {
-      .bio-facebook-grid {
-        grid-template-columns: 2fr 1fr;
-      }
-    }
-  }
+  // #about {
+  //   &-a {
+  //     .bio-facebook-grid {
+  //       grid-template-columns: 2fr 1fr;
+  //     }
+  //   }
+  // }
 
-  #contact {
-    &-a {
-      form {
-        width: 50vw;
-      }
+  // #contact {
+  //   &-a {
+  //     form {
+  //       width: 50vw;
+  //     }
 
-      button[type='submit'] {
-        margin-bottom: 1rem;
-      }
-    }
-  }
+  //     button[type='submit'] {
+  //       margin-bottom: 1rem;
+  //     }
+  //   }
+  // }
 
   // Footer
   #main-footer {

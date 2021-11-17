@@ -86,6 +86,9 @@ input[class^='btn-']:hover {
   font-size: 1.3rem;
   margin-bottom: 2rem; }
 
+.bold {
+  font-weight: 500; }
+
 .text-center {
   text-align: center; }
 
@@ -121,7 +124,7 @@ input[class^='btn-']:hover {
   font-weight: 100;
   text-transform: uppercase; }
 
-.bottom-line {
+.divider {
   height: 2px;
   width: 3rem;
   background: #3e418f;
@@ -135,6 +138,10 @@ input[class^='btn-']:hover {
     padding: 2rem;
     background: #f4f4f4;
     border-radius: 5px; }
+  .grid-blog-item {
+    border-radius: 5px;
+    border: 1px solid silver;
+    text-align: left; }
 
 .hb-menu-wrap {
   position: fixed;
@@ -280,7 +287,7 @@ input[class^='btn-']:hover {
       #main-nav li a.current {
         border-color: #3e418f; }
 
-#header-home .top, #header-about .top, #header-services .top, #header-contact .top {
+#header-home .top, #header-blog .top {
   background-color: transparent; }
 
 #header-home {
@@ -289,20 +296,8 @@ input[class^='btn-']:hover {
   color: #fff;
   display: block; }
 
-#header-about {
-  background: url("../img/about-header.jpg") no-repeat 55% 40%/135%;
-  height: 25vh;
-  color: #fff;
-  display: block; }
-
-#header-services {
-  background: url("../img/services-header.jpg") no-repeat 0 0/cover;
-  height: 25vh;
-  color: #fff;
-  display: block; }
-
-#header-contact {
-  background: url("../img/contact-header.jpg") no-repeat center center/cover;
+#header-blog {
+  background: url("../img/blog-header.jpg") no-repeat 55% 40%/135%;
   height: 25vh;
   color: #fff;
   display: block; }
@@ -329,11 +324,12 @@ input[class^='btn-']:hover {
   transform: translateX(-50%); }
 
 #home-a .youtube-sub {
-  display: none;
   align-items: center;
-  justify-content: center;
-  padding: 2rem 0; }
+  justify-content: center; }
+  #home-a .youtube-sub p {
+    padding: 1rem 0; }
   #home-a .youtube-sub i {
+    display: none;
     padding: 0 1rem;
     color: #3e418f; }
 
@@ -369,54 +365,16 @@ input[class^='btn-']:hover {
     #home-b .grid-item p {
       color: #00023e; }
 
-#about-a .py-2 {
+#blog-a .py-2 {
   padding-left: 2rem;
   padding-right: 2rem; }
 
-#about-a .bio-facebook-grid {
-  display: grid;
-  grid-gap: 1rem; }
+#blog-a .grid-blog-item div {
+  padding: 0 0 1rem 1rem; }
 
-#about-a .about-p {
-  padding: 0.5rem;
-  font-size: 1.15rem; }
-
-#about-a .facebook-embed {
-  display: none;
-  border: 2px solid #333;
-  border-radius: 3px; }
-
-#contact-a form {
-  width: 80vw;
-  margin: 0 auto; }
-
-#contact-a input,
-#contact-a textarea {
-  border: 1px #00023e solid;
-  outline: none; }
-
-#contact-a input:focus,
-#contact-a textarea:focus {
-  border-color: #3e418f; }
-
-#contact-a textarea {
-  height: 8rem;
-  resize: none; }
-
-#contact-a .text-fields {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1.2rem;
-  margin-bottom: 1.2rem; }
-  #contact-a .text-fields .text-input {
-    padding: 0.5rem 1rem; }
-
-#contact-a button[type='submit'] {
-  width: 50%;
-  outline: none; }
-
-#contact-a .recaptcha {
-  margin: 0 auto; }
+#blog-a .grid-blog-item:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.5s; }
 
 #main-footer {
   color: #00023e; }
@@ -459,14 +417,12 @@ input[class^='btn-']:hover {
 @media (min-width: 768px) {
   #home-a .youtube-sub {
     display: flex; }
+  #home-a .youtube-sub {
+    padding: 2rem 0; }
+    #home-a .youtube-sub i {
+      display: block; }
   #home-b .grid {
     padding-bottom: 1.5rem; }
-  #about-a .facebook-embed {
-    display: block;
-    border: none;
-    margin: 0 auto; }
-  #about-b {
-    display: block; }
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
     .grid-item {
@@ -487,23 +443,11 @@ input[class^='btn-']:hover {
   #header-home {
     background-position: center center / cover;
     height: 100vh; }
-  #header-about {
-    background: url("../img/about-header.jpg") no-repeat 55% 50%/cover;
-    height: 40vh; }
-  #header-services {
-    background: url("../img/services-header.jpg") no-repeat 0 0/cover;
-    height: 40vh; }
-  #header-contact {
-    background: url("../img/contact-header.jpg") no-repeat 55% 80%/cover;
+  #header-blog {
+    background: url("../img/blog-header.jpg") no-repeat 55% 50%/cover;
     height: 40vh; }
   #home-b .grid {
     padding-bottom: 3rem; }
-  #about-a .bio-facebook-grid {
-    grid-template-columns: 2fr 1fr; }
-  #contact-a form {
-    width: 50vw; }
-  #contact-a button[type='submit'] {
-    margin-bottom: 1rem; }
   #main-footer .footer-content {
     flex-direction: row; }
   .grid {
